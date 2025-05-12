@@ -8,7 +8,7 @@ export default function CTASection() {
         <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
           <span className="block">Ready to get started?</span>
           <span className="block text-blue-200">
-            Let's create something amazing together.
+            Let&apos;s create something amazing together.
           </span>
         </h2>
         <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">

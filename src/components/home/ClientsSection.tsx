@@ -17,7 +17,7 @@ export default function ClientsSection() {
             Trusted by Industry Leaders
           </h2>
           <p className="mt-4 text-lg text-gray-600">
-            We're proud to work with some of the most innovative companies in the world
+            We&apos;re proud to work with some of the most innovative companies in the world
           </p>
         </div>
 

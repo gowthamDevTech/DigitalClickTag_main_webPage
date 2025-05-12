@@ -57,7 +57,7 @@ export default function Testimonials() {
                   <p className="text-gray-600">{testimonial.role}</p>
                 </div>
               </div>
-              <p className="text-gray-600 italic">"{testimonial.content}"</p>
+              <p className="text-gray-600 italic">&quot;{testimonial.content}&quot;</p>
             </div>
           ))}
         </div>
