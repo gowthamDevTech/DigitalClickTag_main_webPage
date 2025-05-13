@@ -11,7 +11,7 @@ export default function ContactBanner() {
               Get in Touch
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              Have questions? We&apos;d love to hear from you. Send us a message and we'll
+              Have questions? We&apos;d love to hear from you. Send us a message and we&apos;ll
               respond as soon as possible.
             </p>
             <div className="mt-8 space-y-6">
