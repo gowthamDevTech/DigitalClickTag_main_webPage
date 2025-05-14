@@ -69,8 +69,8 @@ export function Home3content() {
     </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossOrigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossOrigin="anonymous"></script>
+  {/* <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossOrigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossOrigin="anonymous"></script> */}
 
   <section className="counters">
     <div className="container">
@@ -200,7 +200,7 @@ export function Home3content() {
     <div className="container">
         <div className="section-header">
             <h2>Our Clients</h2>
-            <p>We don't just build softwares, we build your business.</p>
+            <p>We don&apos;t just build softwares, we build your business.</p>
         </div>
         <div className="owl-carousel clients-carousel">
             <img src="./images/image.png" alt="Client Logo" />
@@ -216,14 +216,14 @@ export function Home3content() {
   </div>
 
   <a href="#" className="back-to-top"><i className="ion-ios-arrow-up"></i></a>
-  <script src="lib/jquery/jquery.min.js"></script>
+  {/* <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/jquery/jquery-migrate.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="lib/easing/easing.min.js"></script>
   <script src="lib/waypoints/waypoints.min.js"></script>
   <script src="lib/counterup/counterup.min.js"></script>
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script> */}
 
   <section className="team" style={{marginTop: "7rem"}}>
     <h1 className="heading" style={{marginTop: "-1.5rem"}} id="team">our team</h1>
@@ -326,9 +326,9 @@ export function Home3content() {
                     <h3>How much will it cost?</h3>
                 </div>
                 <div className="accordion-body">
-                    <p>To get a better idea of the cost of what you want to build, give us a quick phone call. We'll ask you a few questions about the nature of the site, what sort of interactivity the site will have, your graphic design needs, etc. 
-                        Then we'll be able to give you a ballpark figure. 
-                        If you're still interested, we'll come to your place of business and come up with a firm quote.</p>
+                    <p>To get a better idea of the cost of what you want to build, give us a quick phone call. We&apos;ll ask you a few questions about the nature of the site, what sort of interactivity the site will have, your graphic design needs, etc. 
+                        Then we&apos;ll be able to give you a ballpark figure. 
+                        If you&apos;re still interested, we&apos;ll come to your place of business and come up with a firm quote.</p>
                 </div>
             </div>
             <div className="accordion">
