@@ -42,14 +42,14 @@ export default function RootLayout({
         <link href="/home3publicfiles/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
         <link href="/home3publicfiles/lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
         {/* <script src="/home3publicfiles/js/main.js" /> */}
-        <script src="lib/jquery/jquery.min.js"></script>
+        {/* <script src="lib/jquery/jquery.min.js"></script>
   <script src="/home3publicfiles/lib/jquery/jquery-migrate.min.js"></script>
   <script src="/home3publicfiles/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="/home3publicfiles/lib/easing/easing.min.js"></script>
   <script src="/home3publicfiles/lib/waypoints/waypoints.min.js"></script>
   <script src="/home3publicfiles/lib/counterup/counterup.min.js"></script>
   <script src="/home3publicfiles/lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="/home3publicfiles/lib/lightbox/js/lightbox.min.js"></script>
+  <script src="/home3publicfiles/lib/lightbox/js/lightbox.min.js"></script> */}
 
       </head>
       <body>
