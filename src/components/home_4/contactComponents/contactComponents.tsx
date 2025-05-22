@@ -13,10 +13,10 @@ const ContactSection: React.FC = () => {
 
       <div className="relative z-10 max-w-5xl mx-auto text-center bg-white p-8 md:p-12 lg:p-16 rounded-3xl shadow-2xl transform transition-all duration-500 ease-in-out hover:scale-[1.02]">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 text-gray-900 tracking-tight leading-tight">
-          Let's Connect and Create
+          Let&apos;s Connect and Create
         </h1>
         <p className="text-lg md:text-xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
-          Whether you have a groundbreaking idea, a question, or just want to say hello, we'd love to hear from you. Reach out and let's start the conversation!
+          Whether you have a groundbreaking idea, a question, or just want to say hello, we&apos;d love to hear from you. Reach out and let&apos;s start the conversation!
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">

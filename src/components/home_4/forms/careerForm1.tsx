@@ -8,7 +8,7 @@ export default function CareerForm1() {
   //   setResumeFile(event.target.files[0]);
   // };
 
-  const handleSubmit = (event:any) => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     // Here you would typically handle form submission, including the resume file.
     // Example:
@@ -28,7 +28,7 @@ export default function CareerForm1() {
           Join Our Visionaries
         </h2>
         <p className="text-lg text-center text-gray-600 mb-10 max-w-2xl mx-auto">
-          We're always looking for passionate individuals to grow with us. Tell us about yourself and how you can contribute to our journey.
+          We&apos;re always looking for passionate individuals to grow with us. Tell us about yourself and how you can contribute to our journey.
         </p>
 
         <form onSubmit={handleSubmit} className="grid gap-6 md:grid-cols-2">

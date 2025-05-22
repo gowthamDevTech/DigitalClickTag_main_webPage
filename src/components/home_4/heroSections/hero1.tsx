@@ -16,7 +16,7 @@ const Hero1 = () => {
           Fuel Your Business with Cutting Edge - Digital Marketing Strategies!
         </h1>
         <p className="text-lg sm:text-xl leading-relaxed">
-          Since 2014 we've empowered 50+ businesses with creative and impactful digital solutions.
+          Since 2014 we&apos;ve empowered 50+ businesses with creative and impactful digital solutions.
         </p>
       </div>
     </section>
