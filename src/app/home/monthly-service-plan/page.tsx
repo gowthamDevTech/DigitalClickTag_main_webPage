@@ -23,7 +23,7 @@ export default function YearlySercicePlanPage() {
         title={socialMediaTitle}
         description={socialMediadescription}
       />
-      <SocialMediaPosters />
+      {/* <SocialMediaPosters /> */}
       <ContactForm1/> 
       <CallToAction />
     </>

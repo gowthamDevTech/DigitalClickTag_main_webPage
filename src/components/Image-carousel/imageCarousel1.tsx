@@ -185,9 +185,9 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
         </div>
       )}
        {/* The 'View All Posters' button is now placed more responsively */}
-       <div className='absolute bottom-4 right-4 md:right-8 lg:right-12'>
+       {/* <div className='absolute bottom-4 right-4 md:right-8 lg:right-12'>
               <ButtonLinearGradient1 text={'View All Posters'}/>
-        </div>
+        </div> */}
       
 
       {/* Full-screen Modal */}
