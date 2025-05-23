@@ -3,12 +3,13 @@ import ButtonLinearGradient1 from '@/components/home_4/buttons/button1';
 
 const Card1 = () => {
   const bonusAddons = [
-    "Instagram Growth Audit & Setup: FREE",
-    "YouTube Channel Audit & Setup: FREE",
-    "Google My Business Audit & Setup: FREE",
-    "Competitor Database: FREE",
-    "Marketing Trends Report: FREE",
-    "Content Creation using Smartphone + Raw Footage Delivery + On-Spot Video Background Setup Ideas: FREE (🚫 No need for a videography team or expensive studio setup)"
+    "Instagram Growth Audit & Setup",
+    "YouTube Channel Audit & Setup",
+    "Google My Business Audit & Setup",
+    "Competitor Database",
+    "Marketing Trends Report",
+    "Content Creation using Smartphone + Raw Footage Delivery + On-Spot Video Background Setup Ideas",
+    "🚫 No need for a videography team or expensive studio setup"
   ];
 
   return (

@@ -89,21 +89,21 @@ const AboutUsPage = () => {
             <div className="flex items-center justify-center md:justify-start">
               <span className="mr-3">📍</span>
               <p>
-                630 A/2, Annamalainagar. Sivagangai-630561, <br className="hidden md:inline"/> Sivagangai District, Tamilnadu, India.
+                Banglore,Karnataka <br className="hidden md:inline"/>  Coimbatore,Tamilnadu <br className="hidden md:inline"/>  Chennai,Tamilnadu
               </p>
             </div>
             <div className="flex items-center justify-center md:justify-start">
               <span className="mr-3">🌐</span>
-              <p>GST: 33COCPM1489K2ZO</p>
+              <p>GST:XXXX xxxx XXXX </p>
             </div>
             <div className="flex items-center justify-center md:justify-start">
               <span className="mr-3">📧</span>
-              <p>digitalsingam@gmail.com, info@digitalsingam.com</p>
+              <p>digitalclicktag@gmail.com</p>
             </div>
-            <div className="flex items-center justify-center md:justify-start">
+            {/* <div className="flex items-center justify-center md:justify-start">
               <span className="mr-3">📞</span>
               <p>+91 9952641127</p>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

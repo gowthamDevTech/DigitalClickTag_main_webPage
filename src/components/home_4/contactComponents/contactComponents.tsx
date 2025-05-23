@@ -27,20 +27,20 @@ const ContactSection: React.FC = () => {
               <MapPin className="text-indigo-500 flex-shrink-0 mt-1" size={24} />
               <div>
                 <h3 className="font-semibold text-gray-700">Address</h3>
-                <p className="text-gray-600">123 Innovate Hub, Cyber Towers,</p>
-                <p className="text-gray-600">Chennai, Tamil Nadu, India - 600000</p>
+                <p className="text-gray-600">Bengaluru, Karnataka, India</p>
+                <p className="text-gray-600">Chennai, Tamil Nadu, India </p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
               <Mail className="text-indigo-500 flex-shrink-0 mt-1" size={24} />
               <div>
                 <h3 className="font-semibold text-gray-700">Email</h3>
-                <a href="mailto:hello@yourcompany.com" className="text-indigo-600 hover:text-indigo-800 transition-colors duration-200">
-                  hello@yourcompany.com
+                <a href="mailto:digitalclicktag@gmail.com" className="text-indigo-600 hover:text-indigo-800 transition-colors duration-200">
+                digitalclicktag@gmail.com
                 </a>
               </div>
             </div>
-            <div className="flex items-start space-x-4">
+            {/* <div className="flex items-start space-x-4">
               <Phone className="text-indigo-500 flex-shrink-0 mt-1" size={24} />
               <div>
                 <h3 className="font-semibold text-gray-700">Phone</h3>
@@ -48,7 +48,7 @@ const ContactSection: React.FC = () => {
                   +91 98765 43210
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Contact Form */}

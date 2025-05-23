@@ -1,7 +1,5 @@
 import Hero1 from "@/components/home_4/heroSections/hero1";
-import Footer from "@/components/home_4/home/Footer";
 import Header from "@/components/home_4/home/Header";
-import TrustedBrands from "@/components/home_4/home/TrustedBrands";
 import React from "react";
 import {
   BonusAddonsSection,
@@ -18,7 +16,6 @@ export default function YearlySercicePlanPage() {
   return (
     <>
       <Hero1 />
-      <TrustedBrands />
       <BonusAddonsSection />
       <YearlyPricing />
       <HeadingDescription1

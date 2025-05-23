@@ -1,6 +1,3 @@
-
-
-import Navbar from "@/components/home_4/commonComponents/Navbar";
 import Hero from "@/components/home_2/Hero";
 import AboutOverview from "@/components/home_2/AboutOverview";
 import ServicesSection from "@/components/home_2/ServicesSection";
@@ -13,47 +10,42 @@ import CTASection from "@/components/home_2/CTASection";
 import ContactBanner from "@/components/home_2/ContactBanner";
 import GapDivider from "@/components/home_4/commonComponents/gapDivider";
 
-
 const Home = () => {
   return (
     <div>
-       <Navbar />
       <main className="bg-gradient-to-br from-indigo-600 to-blue-600">
+        <Hero />
+        <GapDivider />
+        <AboutOverview />
+        <GapDivider />
 
-          <Hero />
-          <GapDivider/>
-          <AboutOverview />
-          <GapDivider/>
+        <ServicesSection />
+        <GapDivider />
 
-          <ServicesSection />
-          <GapDivider/>
+        <WhyChooseUs />
+        <GapDivider />
 
-          <WhyChooseUs />
-          <GapDivider/>
+        <PortfolioPreview />
+        <GapDivider />
 
-          <PortfolioPreview />
-          <GapDivider/>
+        <Testimonials />
+        <GapDivider />
 
-          <Testimonials />
-          <GapDivider/>
+        <ClientsSection />
+        <GapDivider />
 
-          <ClientsSection />
-          <GapDivider/>
+        {/* <PricingSection /> */}
+        <BlogPreview />
+        <GapDivider />
 
-          {/* <PricingSection /> */}
-          <BlogPreview />
-          <GapDivider/>
+        <CTASection />
+        <GapDivider />
 
-          <CTASection />
-          <GapDivider/>
-
-          <ContactBanner />
+        <ContactBanner />
       </main>
-      <>
-  
-      </>
+      <></>
     </div>
-  ); 
+  );
 };
 
 export default Home;

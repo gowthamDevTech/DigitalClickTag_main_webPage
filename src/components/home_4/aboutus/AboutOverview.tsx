@@ -1,9 +1,14 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+import digitalClickTagLogo from '@/assets/official images/company images/digitalclicktaglogo.png';
+
+
 
 export default function AboutOverview() {
   return (
     <div className="bg-gray-50 py-16">
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
           <div>
@@ -85,11 +90,30 @@ export default function AboutOverview() {
               </Link>
             </div> */}
           </div>
-          <div className="mt-12 lg:mt-0">
-            <div className="aspect-w-5 aspect-h-3 rounded-lg overflow-hidden">
-              <div className="w-full h-full bg-gray-200 flex items-center justify-center">
-                {/* Replace with actual image */}
-                <span className="text-gray-500">Company Image</span>
+          <div className="mt-0 lg:mt-0">
+          
+            <div className=" relative">
+              {/* <video
+              src='/videos/background animation.mp4'
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="  object-cover z-0"
+              /> */}
+                {/* <source src='/videos/background animation.mp4' type="video/mp4" />
+              </video> */}
+              <div className="absolute inset-0 bg-white/30  backdrop-blur-md flex items-center justify-center">
+                <div className="relative z-10">
+                  <Image
+                    src={digitalClickTagLogo}
+                    alt="Digital Click Tag Logo"
+                    width={300}
+                    height={300}
+                    className="object-cover"
+                    priority
+                  />
+                </div>
               </div>
             </div>
           </div>

@@ -17,33 +17,33 @@ export default function Footer() {
           <h3 className="text-white font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2 text-gray-400">
             <li>
-              <Link href="/home4" className="hover:text-white">Home</Link>
+              <Link href="/home" className="hover:text-white">Home</Link>
             </li>
             <li>
-              <Link href="/home4/aboutus" className="hover:text-white">About Us</Link>
+              <Link href="/home/aboutus" className="hover:text-white">About Us</Link>
             </li>
             <li>
-              <Link href="/home4/yearly-service-plan" className="hover:text-white">Yearly Service Plan</Link>
+              <Link href="/home/yearly-service-plan" className="hover:text-white">Yearly Service Plan</Link>
             </li>
             <li>
-              <Link href="/home4/monthly-service-plan" className="hover:text-white">Monthly Service Plan</Link>
+              <Link href="/home/monthly-service-plan" className="hover:text-white">Monthly Service Plan</Link>
             </li>
             <li>
-              <Link href="/home4/website-and-seo" className="hover:text-white">Website and SEO</Link>
+              <Link href="/home/website-and-seo" className="hover:text-white">Website and SEO</Link>
             </li>
             <li>
-              <Link href="/home4/video-production" className="hover:text-white">Video Production</Link>
+              <Link href="/home/video-production" className="hover:text-white">Video Production</Link>
             </li>
             <li>
-              <Link href="/home4/careers" className="hover:text-white">Careers</Link>
+              <Link href="/home/careers" className="hover:text-white">Careers</Link>
             </li>
             <li>
-              <Link href="/home4/contact" className="hover:text-white">Contact</Link>
+              <Link href="/home/contact" className="hover:text-white">Contact</Link>
             </li>
           </ul>
         </div>
 
-        {/* Contact Info */}
+        {/* Contact Info */} 
         <div>
           <h3 className="text-white font-semibold mb-4">Contact</h3>
           <ul className="space-y-2 text-gray-400">

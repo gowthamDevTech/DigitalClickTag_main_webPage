@@ -1,5 +1,6 @@
 import Header from "@/components/home_4/home/Header";
 import Footer from "@/components/home_4/commonComponents/Footer";
+import Navbar from "@/components/home_4/commonComponents/Navbar";
 
 import type { Metadata } from "next";
 
@@ -16,7 +17,10 @@ export default function Layout({
 }>) {
   return (
    <>
+
         <Header />
+      <Navbar />
+
         {children}
       <Footer />
 
