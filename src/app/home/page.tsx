@@ -1,35 +1,59 @@
-import Footer from "@/components/common/Footer";
-import Navbar from "@/components/common/Navbar";
-import Hero from "@/components/home/Hero";
-import AboutOverview from "@/components/home/AboutOverview";
-import ServicesSection from "@/components/home/ServicesSection";
-import WhyChooseUs from "@/components/home/WhyChooseUs";
-import PortfolioPreview from "@/components/home/PortfolioPreview";
-import Testimonials from "@/components/home/Testimonials";
-import ClientsSection from "@/components/home/ClientsSection";
-import PricingSection from "@/components/home/PricingSection";
-import BlogPreview from "@/components/home/BlogPreview";
-import CTASection from "@/components/home/CTASection";
-import ContactBanner from "@/components/home/ContactBanner";
 
-export default function Home() {
+
+import Navbar from "@/components/home_4/commonComponents/Navbar";
+import Hero from "@/components/home_2/Hero";
+import AboutOverview from "@/components/home_2/AboutOverview";
+import ServicesSection from "@/components/home_2/ServicesSection";
+import WhyChooseUs from "@/components/home_2/WhyChooseUs";
+import PortfolioPreview from "@/components/home_2/PortfolioPreview";
+import Testimonials from "@/components/home_2/Testimonials";
+import ClientsSection from "@/components/home_2/ClientsSection";
+import BlogPreview from "@/components/home_2/BlogPreview";
+import CTASection from "@/components/home_2/CTASection";
+import ContactBanner from "@/components/home_2/ContactBanner";
+import GapDivider from "@/components/home_4/commonComponents/gapDivider";
+
+
+const Home = () => {
   return (
-    <>
-      <Navbar />
-      <main>
-        <Hero />
-        <AboutOverview />
-        <ServicesSection />
-        <WhyChooseUs />
-        <PortfolioPreview />
-        <Testimonials />
-        <ClientsSection />
-        {/* <PricingSection /> */}
-        <BlogPreview />
-        <CTASection />
-        <ContactBanner />
+    <div>
+       <Navbar />
+      <main className="bg-gradient-to-br from-indigo-600 to-blue-600">
+
+          <Hero />
+          <GapDivider/>
+          <AboutOverview />
+          <GapDivider/>
+
+          <ServicesSection />
+          <GapDivider/>
+
+          <WhyChooseUs />
+          <GapDivider/>
+
+          <PortfolioPreview />
+          <GapDivider/>
+
+          <Testimonials />
+          <GapDivider/>
+
+          <ClientsSection />
+          <GapDivider/>
+
+          {/* <PricingSection /> */}
+          <BlogPreview />
+          <GapDivider/>
+
+          <CTASection />
+          <GapDivider/>
+
+          <ContactBanner />
       </main>
-      <Footer />
-    </>
-  );
-}
+      <>
+  
+      </>
+    </div>
+  ); 
+};
+
+export default Home;
