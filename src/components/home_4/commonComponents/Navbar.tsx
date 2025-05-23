@@ -24,7 +24,7 @@ export default function Navbar() {
   return (
     
     <header className="sticky top-0 z-50 bg-white shadow">
-      <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-4 py-0 flex justify-between items-center">
         {/* Logo image */}
         <Link href="/home">
         <Image
@@ -32,7 +32,7 @@ export default function Navbar() {
                     alt="Digital Click Tag Logo"
                     width={75}
                     height={75}
-                    className="object-cover"
+                    className="object-cover sm:w-30 sm:h-30"
                     priority
                   />
                   </Link>
@@ -63,7 +63,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white shadow px-4 pb-4">
+        <div className="md:hidden bg-white shadow px-4 pb-5">
           <nav className="flex flex-col space-y-3">
             {navLinks.map((link) => (
               <a

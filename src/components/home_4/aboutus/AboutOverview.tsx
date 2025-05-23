@@ -92,7 +92,7 @@ export default function AboutOverview() {
           </div>
           <div className="mt-0 lg:mt-0">
           
-            <div className=" relative">
+            <div className="">
               {/* <video
               src='/videos/background animation.mp4'
                 autoPlay
@@ -103,7 +103,7 @@ export default function AboutOverview() {
               /> */}
                 {/* <source src='/videos/background animation.mp4' type="video/mp4" />
               </video> */}
-              <div className="absolute inset-0 bg-white/30  backdrop-blur-md flex items-center justify-center">
+              <div className=" bg-white/30  backdrop-blur-md flex items-center justify-center">
                 <div className="relative z-10">
                   <Image
                     src={digitalClickTagLogo}
