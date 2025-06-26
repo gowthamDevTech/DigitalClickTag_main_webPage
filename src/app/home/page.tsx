@@ -15,31 +15,22 @@ const Home = () => {
     <div>
       <main className="bg-gradient-to-br from-indigo-600 to-blue-600">
         <Hero />
-        <GapDivider />
         <AboutOverview />
-        <GapDivider />
 
         <ServicesSection />
-        <GapDivider />
 
         <WhyChooseUs />
-        <GapDivider />
 
         <PortfolioPreview />
-        <GapDivider />
 
         <Testimonials />
-        <GapDivider />
 
         <ClientsSection />
-        <GapDivider />
 
         {/* <PricingSection /> */}
         <BlogPreview />
-        <GapDivider />
 
         <CTASection />
-        <GapDivider />
 
         <ContactBanner />
       </main>
