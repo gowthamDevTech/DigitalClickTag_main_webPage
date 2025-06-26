@@ -19,7 +19,7 @@ export default function Hero() {
           Digital Marketing That Grows Your Business
         </h1>
         <p className="text-lg mb-8">
-          Get tailored strategies that drive traffic, boost sales, and elevate your brand.
+          Get tailored strategies that drive traffic, boost sales, and elevate your brand..
         </p>
         <a
           href="/contact"
