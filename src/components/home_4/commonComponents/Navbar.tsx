@@ -1,14 +1,24 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import Image from 'next/image';
 import digitalClickTagLogo from '@/assets/official images/company images/digitalclicktaglogo.png';
 import Link from 'next/link';
-
+import BackgroundImage from '@/components/home_4/commonComponents/background/backgroundImage';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 100);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const navLinks = [
     { label: 'Home', href: '/home' },
@@ -23,18 +33,21 @@ export default function Navbar() {
 
   return (
     
-    <header className="sticky top-0 z-50 bg-white shadow">
-      <div className="max-w-7xl mx-auto px-4 py-0 flex justify-between items-center">
+    <div className={`${isScrolled ? 'sticky' : 'fixed'} top-0 z-20 w-full bg-amber-600 ${isScrolled ?   'bg-violet-700' : 'bg-transparent'}`}> 
+      <div className={` max-w-7xl mx-auto px-4 py-0 flex justify-between items-center 
+      `}
+      >
+        {/* <BackgroundImage image="/images/poster1.jpg" /> */}
         {/* Logo image */}
         <Link href="/home">
         <Image
-                    src={digitalClickTagLogo}
-                    alt="Digital Click Tag Logo"
-                    width={75}
-                    height={75}
-                    className="object-cover sm:w-30 sm:h-30"
-                    priority
-                  />
+          src={digitalClickTagLogo}
+          alt="Digital Click Tag Logo"
+          width={isScrolled ? 55 : 75}
+          height={isScrolled ? 55 : 75}
+          className={`object-cover transition-all duration-300 ${isScrolled ? 'sm:w-[55px] sm:h-[55px]' : 'sm:w-[75px] sm:h-[75px]'}`}
+          priority
+        />
                   </Link>
         {/* <div className="text-2xl font-bold text-indigo-600">DigitalClickTag</div> */}
 
@@ -63,7 +76,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white shadow px-4 pb-5">
+        <div className="md:hidden shadow px-4 pb-5">
           <nav className="flex flex-col space-y-3">
             {navLinks.map((link) => (
               <a
@@ -77,6 +90,6 @@ export default function Navbar() {
           </nav>
         </div>
       )}
-    </header>
+    </div>
   );
 }

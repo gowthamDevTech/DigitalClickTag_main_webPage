@@ -13,7 +13,7 @@ import GapDivider from "@/components/home_4/commonComponents/gapDivider";
 const Home = () => {
   return (
     <div>
-      <main className="bg-gradient-to-br from-indigo-600 to-blue-600">
+      <main className="bg-[var(--primary)]">
         <Hero />
         <AboutOverview />
 
