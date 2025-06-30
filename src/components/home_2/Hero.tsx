@@ -31,7 +31,7 @@ export default function Hero() {
       <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 h-full min-h-screen">
         {/* Left Side - Text Content */}
         <div className="flex flex-col justify-center p-8 lg:p-16">
-          <div className="max-w-2xl bg-white/10 backdrop-blur-lg rounded-2xl p-8 shadow-xl border border-white/20">
+          <div className="max-w-2xl bg-white/10 backdrop-blur-lg rounded-2xl p-8 shadow-xl border border-white/20 mt-10 lg:mt-0">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Digital Marketing That Grows Your Business
             </h1>

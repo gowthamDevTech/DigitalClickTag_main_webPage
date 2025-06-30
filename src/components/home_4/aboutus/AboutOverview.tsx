@@ -13,7 +13,7 @@ export default function AboutOverview() {
       <BackgroundImage image={bg.src}/>
       
       <div className="max-w-7xl mx-auto  sm:px-6 lg:px-8 py-16">
-        <div className="lg:grid lg:grid-cols-2 lg:gap-8 px-4 items-center bg-black/30  backdrop-blur-md">
+        <div className="lg:grid lg:grid-cols-2 lg:gap-8 px-4 py-6 items-center bg-black/30  backdrop-blur-md ">
           <div>
             <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
               About Our Company
@@ -106,8 +106,8 @@ export default function AboutOverview() {
               /> */}
                 {/* <source src='/videos/background animation.mp4' type="video/mp4" />
               </video> */}
-              <div className="  flex items-center justify-center">
-                <div className="relative z-10">
+              <div className="  flex items-center justify-center ">
+                <div className="relative z-10 hidden md:block">
                   <Image
                     src={digitalClickTagLogo}
                     alt="Digital Click Tag Logo"

@@ -9,7 +9,7 @@ export default function AboutOverview() {
 <BackgroundImage image={bg.src}/>
       <div className=" max-w-6xl mx-auto py-20 px-4 md:flex items-center gap-10 ">
 
-        <div className="md:w-1/2 mb-8 md:mb-0">
+        <div className="md:w-1/2 mb-8 md:mb-0 hidden md:block">
           <DotLottieReact
             src="https://lottie.host/d06c7839-4b44-45cb-be0d-34de3253bc28/cOkfT2ugNq.lottie"
             loop

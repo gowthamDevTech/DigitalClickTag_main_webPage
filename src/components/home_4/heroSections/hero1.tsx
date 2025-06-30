@@ -15,7 +15,7 @@ const Hero1 = () => {
           <rect x="0" y="0" width="100%" height="100%" fill="url(#pattern-zigzag)" />
         </svg>
       </div> */}
-      <div className="relative z-10 max-w-4xl mx-auto text-center py-20  px-4 sm:px-6 lg:px-8 bg-white/5 backdrop-blur-sm text-white/80">
+      <div className="relative z-10 max-w-4xl mx-auto text-center py-20  px-4 sm:px-6 lg:px-8 bg-white/5 backdrop-blur-sm text-white">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight">
           Fuel Your Business with Cutting Edge - Digital Marketing Strategies!
         </h1>
