@@ -5,6 +5,8 @@ import BackgroundImage from "@/components/home_4/commonComponents/background/bac
 import SplineViewer from "@/components/home_4/commonComponents/spline/spline";
 import Image from "next/image";
 import bg12 from "@/assets/bg/bg-12.jpg"
+import digitalClickTagLogo from '@/assets/official images/company images/digitalclicktaglogo.png';
+
 
 import React from 'react';
 
@@ -17,7 +19,14 @@ const AboutUsPage = () => {
         url="https://prod.spline.design/vYc7aBog6dI9UFEi/scene.splinecode"
         className=" inset-0"
         loadingFallback={
-          <div className="text-white text-lg animate-pulse">Loading 3D scene...</div>
+          <Image
+            src={digitalClickTagLogo}
+            alt="Digital Click Tag Logo"
+            width={100}
+            height={100}
+            className="object-cover transition-all duration-300"
+            priority
+          />
         }
       />
       </div>
