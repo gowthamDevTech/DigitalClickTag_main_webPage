@@ -67,8 +67,8 @@ const PricingCard1 = () => {
                 {pkg.duration}
               </div>
               <h3 className="text-3xl font-extrabold mb-2">{pkg.name}</h3>
-              <p className="text-xl font-semibold mb-1">{pkg.price}</p>
-              <p className="text-sm mb-4">{pkg.monthlyPrice}</p>
+              {/* <p className="text-xl font-semibold mb-1">{pkg.price}</p> */}
+              {/* <p className="text-sm mb-4">{pkg.monthlyPrice}</p> */}
               <p className="text-md mb-6 opacity-90">{pkg.target}</p>
               <ul className="space-y-3 mb-8">
                 {pkg.features.map((feature, i) => (

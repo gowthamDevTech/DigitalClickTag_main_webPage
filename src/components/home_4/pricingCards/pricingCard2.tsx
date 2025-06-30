@@ -32,8 +32,8 @@ const PricingCard2: React.FC<PricingCardProps> = ({ plan }) => {
       <h3 className="mb-2 text-2xl font-bold text-gray-800">{name}</h3>
       <p className="mb-6 text-gray-600">{tagline}</p>
       <div className="mb-6">
-        <span className="text-5xl font-extrabold text-gray-900">₹{price}</span>
-        <span className="text-xl font-medium text-gray-500">/month</span>
+        {/* <span className="text-5xl font-extrabold text-gray-900">₹{price}</span> */}
+        {/* <span className="text-xl font-medium text-gray-500">/month</span> */}
       </div>
       <ul className="mb-8 flex-grow space-y-3">
         {features.map((feature, index) => (

@@ -18,7 +18,7 @@ export default function Layout({
   return (
    <>
 
-        <Header />
+        {/* <Header /> */}
       <Navbar />
 
         {children}

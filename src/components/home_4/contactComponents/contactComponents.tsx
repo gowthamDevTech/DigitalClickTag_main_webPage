@@ -2,6 +2,8 @@
 
 import React from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react'; // Assuming you have lucide-react or similar icon library installed
+import BackgroundImage from '@/components/home_4/commonComponents/background/backgroundImage';
+import bg from '@/assets/bg/bg-15.jpg';
 
 const ContactSection: React.FC = () => {
   return (
@@ -11,7 +13,9 @@ const ContactSection: React.FC = () => {
       <div className="absolute -bottom-1/4 -right-1/4 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-2000"></div>
       <div className="absolute top-1/4 right-1/4 w-72 h-72 bg-indigo-500 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-4000"></div>
 
-      <div className="relative z-10 max-w-5xl mx-auto text-center bg-white p-8 md:p-12 lg:p-16 rounded-3xl shadow-2xl transform transition-all duration-500 ease-in-out hover:scale-[1.02]">
+      <div className="relative z-10 max-w-5xl mx-auto text-center   rounded-3xl shadow-2xl transform transition-all duration-500 ease-in-out hover:scale-[1.02]">
+        <BackgroundImage image={bg.src}/>
+        <div className='p-8 md:p-12 lg:p-16' >
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 text-gray-900 tracking-tight leading-tight">
           Let&apos;s Connect and Create
         </h1>
@@ -21,7 +25,7 @@ const ContactSection: React.FC = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Contact Information */}
-          <div className="text-left space-y-8 bg-gray-50 p-8 rounded-2xl shadow-inner border border-gray-100 animate-fade-in-left">
+          <div className="text-left space-y-8 bg-gray-50/10 backdrop-blur-sm p-8 rounded-2xl shadow-inner border border-gray-100 animate-fade-in-left">
             <h2 className="text-2xl font-bold text-gray-800 mb-6">Our Details</h2>
             <div className="flex items-start space-x-4">
               <MapPin className="text-indigo-500 flex-shrink-0 mt-1" size={24} />
@@ -52,7 +56,7 @@ const ContactSection: React.FC = () => {
           </div>
 
           {/* Contact Form */}
-          <form className="bg-white p-8 rounded-2xl shadow-xl space-y-6 text-left border border-gray-100 animate-fade-in-right">
+          <form className="bg-white backdrop-blur-sm p-8 rounded-2xl shadow-xl space-y-6 text-left border border-gray-100 animate-fade-in-right">
             <h2 className="text-2xl font-bold text-gray-800 mb-6">Send Us a Message</h2>
             <div className="relative">
               <input
@@ -107,6 +111,7 @@ const ContactSection: React.FC = () => {
             </button>
           </form>
         </div>
+      </div>
       </div>
     </section>
   );

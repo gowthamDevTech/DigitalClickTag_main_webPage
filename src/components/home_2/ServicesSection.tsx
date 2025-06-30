@@ -1,3 +1,7 @@
+import bg from "@/assets/bg/bg-1.jpg";
+import BackgroundImage from "../home_4/commonComponents/background/backgroundImage";
+import BackgroundHover from "../home_4/commonComponents/background/backgroundhover";
+
 // src/components/home/ServicesSection.tsx
 const services = [
   {
@@ -49,26 +53,46 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="py-20">
-      <div className="max-w-6xl mx-auto px-4 text-center">
-        <h2 className="text-3xl font-bold mb-10">Our Services</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service) => (
-            <div
-              key={service.title}
-              className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition"
-            >
-              <img
-                src={service.image}
-                alt={service.title}
-                className="h-20 w-20 mx-auto mb-4 object-contain"
-              />
-              <h3 className="text-xl text-gray-800 font-semibold mb-2">
-                {service.title}
-              </h3>
-              <p className="text-gray-600">{service.description}</p>
-            </div>
-          ))}
+    <section id="services" className="relative min-h-screen">
+      <BackgroundImage image={bg.src} />
+      <div className="max-w-7xl mx-auto px-4 py-20">
+        <div className="flex flex-col lg:flex-row gap-12">
+          {/* Left Column - Sticky Section */}
+          <div className="lg:w-1/3 lg:sticky lg:top-20 h-fit">
+            <h2 className="text-4xl font-bold mb-6 text-white">Our Services</h2>
+            <p className="text-gray-200 mb-8 text-lg">
+              We offer a comprehensive suite of digital marketing services designed to grow your business and enhance your online presence. Our expert team delivers tailored solutions to meet your specific needs.
+            </p>
+          </div>
+
+          {/* Right Column - Scrollable Services */}
+          <div className="lg:w-2/3 space-y-6">
+            {services.map((service) => (
+              <div
+                key={service.title}
+                className=" relative bg-white/10 backdrop-blur-lg rounded-xl shadow-lg border border-white/20 hover:bg-white/20 transition-all duration-300"
+              >
+      <BackgroundHover />
+
+                <div className=" p-8 flex flex-col md:flex-row items-center gap-6">
+
+                  <div className="flex-shrink-0">
+                    <img
+                      src={service.image}
+                      alt={service.title}
+                      className="h-24 w-24 object-contain"
+                    />
+                  </div>
+                  <div className="text-left">
+                    <h3 className="text-2xl font-bold text-white mb-3">
+                      {service.title}
+                    </h3>
+                    <p className="text-gray-200">{service.description}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

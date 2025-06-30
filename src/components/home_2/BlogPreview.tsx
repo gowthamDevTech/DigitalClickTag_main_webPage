@@ -10,15 +10,15 @@ const posts = [
 
 export default function BlogPreview() {
   return (
-    <section className="py-20 
+    <section className=" bg-[var(--primary1)]
     ">
-      <div className="max-w-6xl mx-auto px-4 text-center">
+      <div className="max-w-6xl mx-auto px-4 text-center py-20 text-white">
         <h2 className="text-3xl font-bold mb-10">From Our Blog</h2>
         <div className="grid md:grid-cols-3 gap-6">
           {posts.map((post) => (
-            <div key={post.title} className="shadow rounded-xl overflow-hidden hover:shadow-xl transition">
+            <div key={post.title} className="shadow rounded-xl border border-white  overflow-hidden hover:shadow-xl transition">
               <img src={post.image} alt={post.title} className="h-48 w-full object-cover" />
-              <div className="p-4">
+              <div className="p-7">
                 <h3 className="text-lg font-semibold">{post.title}</h3>
               </div>
             </div>

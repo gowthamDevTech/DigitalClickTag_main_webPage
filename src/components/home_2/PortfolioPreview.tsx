@@ -1,7 +1,8 @@
 import projectImg1 from '@/assets/Project/pro1.jpeg'
 import projectImg2 from '@/assets/Project/pro2.jpeg'
 import projectImg3 from '@/assets/Project/pro3.jpeg'
-
+import BackgroundImage from '../home_4/commonComponents/background/backgroundImage';
+import bg from "@/assets/bg/bg-6.jpg";
 // src/components/home/PortfolioPreview.tsx
 const projects = [
   { title: 'E-commerce Redesign', image: projectImg1.src },
@@ -11,9 +12,10 @@ const projects = [
 
 export default function PortfolioPreview() {
   return (
-    <section id="portfolio" className="py-20 ">
-      <div className="max-w-6xl mx-auto px-4 text-center">
-        <h2 className="text-3xl font-bold mb-10">Our Work</h2>
+    <section id="portfolio" className=" relative">
+      <BackgroundImage image={bg.src}/>
+      <div className="max-w-6xl mx-auto px-4 text-center py-20">
+        <h2 className="text-3xl text-white font-bold mb-10">Our Work</h2>
         <div className="grid md:grid-cols-3 gap-6">
           {projects.map((project) => (
             <div key={project.title} className="text-gray-600 rounded-xl overflow-hidden shadow hover:shadow-xl transition cursor-pointer">

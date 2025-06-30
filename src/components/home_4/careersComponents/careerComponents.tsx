@@ -1,5 +1,6 @@
 import CareerForm1 from '@/components/home_4/forms/careerForm1';
-
+import BackgroundImage from '@/components/home_4/commonComponents/background/backgroundImage';
+import bg from '@/assets/bg/bg-12.jpg';
 
 interface Job {
   title: string;
@@ -27,10 +28,11 @@ export default function CareerJobList() {
   return (
 
     <>
-       <section className="min-h-screen px-4 py-16 bg-gradient-to-b from-red to-slate-100">
-      <div className="max-w-4xl mx-auto text-center">
-        <h1 className="text-4xl font-bold bg-gradient-to-l from-blue-400 to-blue-500 mb-4">Careers at Our Company</h1>
-        <p className="text-slate-700 text-lg mb-10">
+       <section className="min-h-screen relative  ">
+        <BackgroundImage image={bg.src}/>
+      <div className="max-w-4xl mx-auto text-center px-4 py-24 text-white">
+        <h1 className="text-4xl font-bold  mb-4">Careers at Our Company</h1>
+        <p className="text-white text-lg mb-10">
           Be part of a team that thrives on creativity and impact.
         </p>
 

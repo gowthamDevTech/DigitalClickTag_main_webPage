@@ -1,0 +1,43 @@
+.hover-text {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  height: 1.2em; // Adjust based on your font size
+  line-height: 1.2em;
+  vertical-align: middle;
+
+  
+  &__original,
+  &__hover {
+    display: block;
+    transition: transform 0.3s ease;
+    white-space: nowrap;
+  }
+  
+  &__original {
+  color: white;
+
+  }
+   
+  &__hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg, var(--gradient-from, #4F46E5), var(--gradient-to, #EC4899));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translateY(100%) ;
+  }
+  
+  &:hover {
+    .hover-text__original {
+      transform: translateY(-100%);
+    }
+    
+    .hover-text__hover {
+      transform: translateY(0);
+    }
+  }
+}

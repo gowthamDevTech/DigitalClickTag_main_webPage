@@ -13,33 +13,24 @@ import GapDivider from "@/components/home_4/commonComponents/gapDivider";
 const Home = () => {
   return (
     <div>
-      <main className="bg-gradient-to-br from-indigo-600 to-blue-600">
+      <main>
         <Hero />
-        <GapDivider />
         <AboutOverview />
-        <GapDivider />
 
         <ServicesSection />
-        <GapDivider />
 
         <WhyChooseUs />
-        <GapDivider />
 
         <PortfolioPreview />
-        <GapDivider />
 
         <Testimonials />
-        <GapDivider />
 
         <ClientsSection />
-        <GapDivider />
 
         {/* <PricingSection /> */}
         <BlogPreview />
-        <GapDivider />
 
         <CTASection />
-        <GapDivider />
 
         <ContactBanner />
       </main>
