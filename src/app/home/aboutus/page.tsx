@@ -114,10 +114,10 @@ const AboutUsPage = () => {
                 Banglore,Karnataka <br className="hidden md:inline"/>  Coimbatore,Tamilnadu <br className="hidden md:inline"/>  Chennai,Tamilnadu
               </p>
             </div>
-            <div className="flex items-center justify-center md:justify-start">
+            {/* <div className="flex items-center justify-center md:justify-start">
               <span className="mr-3">🌐</span>
               <p>GST:XXXX xxxx XXXX </p>
-            </div>
+            </div> */}
             <div className="flex items-center justify-center md:justify-start">
               <span className="mr-3">📧</span>
               <p>digitalclicktag@gmail.com</p>
