@@ -41,7 +41,6 @@ const AboutUsPage = () => {
               "Google Ranking Optimization",
               "Business Consultation & Packaging Design Support"
             ].map((service, index) => (
-              <div className=" ">
                
  
               <div key={index} className="z-0 relative  shadow-md">
@@ -51,7 +50,6 @@ const AboutUsPage = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
                 <p className=" text-lg font-medium text-white">{service}</p>
-              </div>
               </div>
               </div>
             ))}
