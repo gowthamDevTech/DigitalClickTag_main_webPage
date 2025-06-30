@@ -6,6 +6,7 @@ import Image from 'next/image';
 import digitalClickTagLogo from '@/assets/official images/company images/digitalclicktaglogo.png';
 import Link from 'next/link';
 import BackgroundImage from '@/components/home_4/commonComponents/background/backgroundImage';
+import HoverText from '@/components/home_4/commonComponents/animations/text animations/hovertext/hovertext';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -33,7 +34,7 @@ export default function Navbar() {
 
   return (
     
-    <div className={`${isScrolled ? 'sticky' : 'fixed'} top-0 z-20 w-full bg-amber-600 ${isScrolled ?   'bg-violet-700' : 'bg-transparent'}`}> 
+    <div className={`${isScrolled ? 'sticky' : 'fixed'} top-0 z-20 w-full  ${isScrolled ? 'bg-[var(--primary1)]' : 'bg-black/10 backdrop-blur-lg'}   `}> 
       <div className={` max-w-7xl mx-auto px-4 py-0 flex justify-between items-center 
       `}
       >
@@ -50,16 +51,15 @@ export default function Navbar() {
         />
                   </Link>
         {/* <div className="text-2xl font-bold text-indigo-600">DigitalClickTag</div> */}
-
         {/* Desktop Nav */}
-        <nav className="hidden md:flex space-x-6 font-medium text-gray-700">
+        <nav className="hidden md:flex space-x-6 ">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="hover:text-indigo-600 transition"
+              className=" transition"
             >
-              {link.label}
+              <HoverText text={link.label}/>
             </a>
           ))}
         </nav>
@@ -82,9 +82,9 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-gray-700 font-medium hover:text-indigo-600"
+                className=" font-medium "
               >
-                {link.label}
+                <HoverText text={link.label}/>
               </a>
             ))}
           </nav>

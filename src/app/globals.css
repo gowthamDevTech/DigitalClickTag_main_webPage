@@ -1,9 +1,23 @@
 @import "tailwindcss";
 
+
 :root {
-  --primary: #7D2768;
-  /* --primary: #fff; */
+  --primary: #347433;
+  --primary1: #032E14;
+  --primary2: #FF6F3C;
+  --primary3: #FFC107;
+  --primary4: #B22222;
 }
 
-@theme inline {
+
+/* Custom selection styles */
+body::selection {
+  background-color: #B22222; /* yellow */
+  color: #FFC107; /* green */
+}
+
+/* For Firefox */
+::-moz-selection {
+  background-color: #FFD700;
+  color: #008000;
 }

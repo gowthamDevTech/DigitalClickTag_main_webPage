@@ -1,13 +1,14 @@
 import Link from "next/link";
+import HoverText from "./animations/text animations/hovertext/hovertext";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-10">
+    <footer className="bg-[var(--primary)] text-white py-10">
       <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-8 text-sm">
         {/* Logo & Description */}
         <div className="md:col-span-2">
           <div className="text-2xl font-bold text-white mb-4">DigitalClickTag</div>
-          <p className="text-gray-400">
+          <p className="text-gray-50">
             A digital agency providing innovative marketing solutions and web design that help businesses grow and succeed online.
           </p>
         </div>
@@ -16,45 +17,45 @@ export default function Footer() {
         <div>
           <h3 className="text-white font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2 text-gray-400">
-            <li>
-              <Link href="/home" className="hover:text-white">Home</Link>
-            </li>
-            <li>
-              <Link href="/home/aboutus" className="hover:text-white">About Us</Link>
-            </li>
-            <li>
-              <Link href="/home/yearly-service-plan" className="hover:text-white">Yearly Service Plan</Link>
-            </li>
-            <li>
-              <Link href="/home/monthly-service-plan" className="hover:text-white">Monthly Service Plan</Link>
-            </li>
-            <li>
-              <Link href="/home/website-and-seo" className="hover:text-white">Website and SEO</Link>
-            </li>
-            <li>
-              <Link href="/home/video-production" className="hover:text-white">Video Production</Link>
-            </li>
-            <li>
-              <Link href="/home/careers" className="hover:text-white">Careers</Link>
-            </li>
-            <li>
-              <Link href="/home/contact" className="hover:text-white">Contact</Link>
-            </li>
+            {[
+              { path: "/home", label: "Home" },
+              { path: "/home/aboutus", label: "About Us" },
+              { path: "/home/yearly-service-plan", label: "Yearly Service Plan" },
+              { path: "/home/monthly-service-plan", label: "Monthly Service Plan" },
+              { path: "/home/website-and-seo", label: "Website and SEO" },
+              { path: "/home/video-production", label: "Video Production" },
+              { path: "/home/careers", label: "Careers" },
+              { path: "/home/contact", label: "Contact" }
+            ].map((link, index) => (
+              <li key={index}>
+                <Link href={link.path} className="">
+                              <HoverText text={link.label} gradient={["black", "white"]}/>
+                
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 
         {/* Contact Info */} 
         <div>
           <h3 className="text-white font-semibold mb-4">Contact</h3>
-          <ul className="space-y-2 text-gray-400">
-            <li>Email: hello@digitalclicktag.com</li>
-            <li>Phone: +91 98765 43210</li>
-            <li>Address: Electronic city, Bengaluru</li>
+          <ul className="space-y-2 text-gray-100">
+            {[
+              { icon: '✉️', text: 'hello@digitalclicktag.com' },
+              { icon: '📞', text: '+91 98765 43210' },
+              { icon: '📍', text: 'Electronic city, Bengaluru' }
+            ].map((contact, index) => (
+              <li key={index} className="flex items-center gap-2">
+                <span className="text-white">{contact.icon}</span>
+                <span>{contact.text}</span>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
 
-      <div className="mt-8 text-center text-gray-500 text-xs">
+      <div className="mt-8 text-center text-white text-xs">
         © {new Date().getFullYear()} DigitalClickTag Agency. All rights reserved.
       </div>
     </footer>

@@ -1,19 +1,22 @@
 import RobotSpline from '@/components/splineDesigns/robo';
 import Image from 'next/image';
 import { BackgroundVideo } from '@/components/home_4/commonComponents/background/backgroundVideo';
-
+import BackgroundImage from '@/components/home_4/commonComponents/background/backgroundImage';
+import bg from "../../assets/bg/bg-5.jpg";
 export default function Hero() {
   return (
     <>
      
         
-    <section className="relative bg-[--primary] text-white min-h-screen overflow-hidden">
+    <section className="relative text-white min-h-screen overflow-hidden">
       {/* Video Background */}
      
 
       <div className="absolute inset-0 w-full h-full   ">
-      
-<BackgroundVideo src='videos/animation videos/vibrate dots short.mp4' />
+<BackgroundImage image={bg.src}/>
+
+      {/* <BackgroundImage image={'images/bg/dots.png'}/> */}
+{/* <BackgroundVideo src='videos/animation videos/vibrate dots short.mp4' /> */}
         {/* <video
           autoPlay
           loop
@@ -28,7 +31,7 @@ export default function Hero() {
       <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 h-full min-h-screen">
         {/* Left Side - Text Content */}
         <div className="flex flex-col justify-center p-8 lg:p-16">
-          <div className="max-w-2xl">
+          <div className="max-w-2xl bg-white/10 backdrop-blur-lg rounded-2xl p-8 shadow-xl border border-white/20">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Digital Marketing That Grows Your Business
             </h1>

@@ -2,28 +2,31 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import digitalClickTagLogo from '@/assets/official images/company images/digitalclicktaglogo.png';
-
+import BackgroundImage from '../commonComponents/background/backgroundImage';
+import bg from '@/assets/bg/bg-1.jpg';
 
 
 export default function AboutOverview() {
   return (
-    <div className="bg-gray-50 py-16">
+    <div className="relative
+     z-10 ">
+      <BackgroundImage image={bg.src}/>
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
+      <div className="max-w-7xl mx-auto  sm:px-6 lg:px-8 py-16">
+        <div className="lg:grid lg:grid-cols-2 lg:gap-8 px-4 items-center bg-black/30  backdrop-blur-md">
           <div>
-            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+            <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
               About Our Company
             </h2>
-            <p className="mt-4 text-lg text-gray-600">
+            <p className="mt-4 text-lg text-white">
               We are a team of passionate developers, designers, and digital strategists
               dedicated to helping businesses succeed in the digital world.
             </p>
-            <div className="mt-8 space-y-4">
+            <div className="mt-8 space-y-4 text-white">
               <div className="flex items-start">
                 <div className="flex-shrink-0">
                   <svg
-                    className="h-6 w-6 text-blue-600"
+                    className="h-6 w-6 "
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -36,14 +39,14 @@ export default function AboutOverview() {
                     />
                   </svg>
                 </div>
-                <p className="ml-3 text-gray-600">
+                <p className="ml-3 ">
                   Over 10 years of industry experience
                 </p>
               </div>
               <div className="flex items-start">
                 <div className="flex-shrink-0">
                   <svg
-                    className="h-6 w-6 text-blue-600"
+                    className="h-6 w-6 "
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -56,14 +59,14 @@ export default function AboutOverview() {
                     />
                   </svg>
                 </div>
-                <p className="ml-3 text-gray-600">
+                <p className="ml-3 ">
                   More than 500 successful projects delivered
                 </p>
               </div>
               <div className="flex items-start">
                 <div className="flex-shrink-0">
                   <svg
-                    className="h-6 w-6 text-blue-600"
+                    className="h-6 w-6 "
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -76,7 +79,7 @@ export default function AboutOverview() {
                     />
                   </svg>
                 </div>
-                <p className="ml-3 text-gray-600">
+                <p className="ml-3 ">
                   Dedicated team of experts
                 </p>
               </div>
@@ -103,7 +106,7 @@ export default function AboutOverview() {
               /> */}
                 {/* <source src='/videos/background animation.mp4' type="video/mp4" />
               </video> */}
-              <div className=" bg-white/30  backdrop-blur-md flex items-center justify-center">
+              <div className="  flex items-center justify-center">
                 <div className="relative z-10">
                   <Image
                     src={digitalClickTagLogo}

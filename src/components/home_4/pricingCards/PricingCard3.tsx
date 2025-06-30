@@ -83,7 +83,7 @@ const WebsitePackages: React.FC = () => {
              <h3 className="text-xl font-bold mb-2 text-indigo-700">
   {pkg.title}
 </h3>
-              <p className="text-pink-600 text-lg font-bold mb-4">{pkg.price}</p>
+              {/* <p className="text-pink-600 text-lg font-bold mb-4">{pkg.price}</p> */}
               <ul className="list-disc ml-5 space-y-1 text-sm text-gray-700">
                 {pkg.features.map((feature, i) => (
                   <li key={i}>{feature}</li>

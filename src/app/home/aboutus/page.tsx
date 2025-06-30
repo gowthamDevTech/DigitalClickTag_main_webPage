@@ -1,19 +1,35 @@
 
 import AboutOverview from "@/components/home_4/aboutus/AboutOverview";
+import BackgroundHover from "@/components/home_4/commonComponents/background/backgroundhover";
+import BackgroundImage from "@/components/home_4/commonComponents/background/backgroundImage";
+import SplineViewer from "@/components/home_4/commonComponents/spline/spline";
+import Image from "next/image";
+import bg12 from "@/assets/bg/bg-12.jpg"
 
 import React from 'react';
 
 const AboutUsPage = () => {
   return (
     <>
-    <div className="font-sans antialiased text-gray-800 bg-gray-50">
+    <div className=" font-sans antialiased text-gray-800 bg-gray-50">
+      <div className="w-[98vw] h-[100vh] overflow-hidden  mx-auto">
+    <SplineViewer
+        url="https://prod.spline.design/vYc7aBog6dI9UFEi/scene.splinecode"
+        className=" inset-0"
+        loadingFallback={
+          <div className="text-white text-lg animate-pulse">Loading 3D scene...</div>
+        }
+      />
+      </div>
       {/* Hero/Welcome Section */}
         <AboutOverview />
 
 
       {/* What We Do Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-6xl mx-auto">
+      <section className=" relative z-10">
+      <BackgroundImage image={bg12.src}/>
+
+        <div className="max-w-6xl mx-auto py-16 px-4 sm:px-6 lg:px-8 ">
           <h2 className="text-3xl sm:text-4xl font-bold text-center text-blue-800 mb-12">What We Do</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
@@ -25,11 +41,18 @@ const AboutUsPage = () => {
               "Google Ranking Optimization",
               "Business Consultation & Packaging Design Support"
             ].map((service, index) => (
-              <div key={index} className="flex items-start p-6 bg-gray-100 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
-                <svg className="w-6 h-6 text-blue-500 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <div className=" ">
+               
+ 
+              <div key={index} className="z-0 relative  shadow-md">
+              <BackgroundHover/>
+               <div className="flex items-start p-6" > 
+                <svg className=" w-6 h-6 text-blue-500 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
-                <p className="text-lg font-medium">{service}</p>
+                <p className=" text-lg font-medium text-white">{service}</p>
+              </div>
+              </div>
               </div>
             ))}
           </div>
@@ -37,8 +60,9 @@ const AboutUsPage = () => {
       </section>
 
       {/* Our Approach Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-blue-50">
-        <div className="max-w-4xl mx-auto text-center">
+      <section className=" ">
+
+        <div className="py-16 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-blue-800 mb-8">Our Approach</h2>
           <p className="text-lg leading-relaxed text-gray-700">
             Unlike traditional agencies, Digital Singam focuses on <span className="font-semibold text-blue-600">result-oriented marketing</span>
@@ -82,7 +106,7 @@ const AboutUsPage = () => {
       </section>
 
       {/* Contact Information Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-blue-600 text-white rounded-t-3xl shadow-lg">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[var(--primary1)] text-white rounded-t-3xl shadow-lg">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8">Contact Information</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-lg">

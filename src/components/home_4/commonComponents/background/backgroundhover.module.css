@@ -1,0 +1,39 @@
+.buttonWrapper {
+
+  transition: color 500ms ease-in-out;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease, color 0.3s ease;
+
+}
+
+.buttonWrapper::before {
+  position: absolute;
+
+  content: '';
+  left: -110%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient( to right ,#1e3a8a00 , #1e3a8a, #3b82f6, #3b82f600); 
+  /* transform: translateX(-100%) translateY(-100%) rotate(45deg); */
+  transform: skewX(-45deg);
+
+  transition: left .5s ease-in-out;
+  transition: color 1s ease-in-out;
+  transition: scale 1s ease-in-out;
+  z-index: -1;
+}
+
+.buttonWrapper:hover::before {
+  left: 0;
+  scale: 2;
+  background: linear-gradient( to right  , #1e3a8a, #3b82f6, #3b82f600); 
+
+  /* background: linear-gradient( to right ,#1e3a8a , #1e3a8a, #3b82f6, #3b82f6); 
+
+  transform: translateX(0) translateY(0) ; */
+}
+
+

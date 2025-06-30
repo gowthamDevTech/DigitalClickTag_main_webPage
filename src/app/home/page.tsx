@@ -13,7 +13,7 @@ import GapDivider from "@/components/home_4/commonComponents/gapDivider";
 const Home = () => {
   return (
     <div>
-      <main className="bg-[var(--primary)]">
+      <main>
         <Hero />
         <AboutOverview />
 

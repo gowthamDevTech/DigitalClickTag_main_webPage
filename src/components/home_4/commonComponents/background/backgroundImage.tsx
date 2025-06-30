@@ -6,9 +6,9 @@ interface BackgroundImageProps {
 
 const BackgroundImage: React.FC<BackgroundImageProps> = ({ image }) => {
   return (
-    <div className="absolute inset-0  z-[-1]">
-      <img src={image} alt="" className="w-full h-full object-cover" />
-    </div>
+    <>
+      <img src={image} alt="background image" style={{zIndex: -1}} className="absolute inset w-full h-full object-cover" />
+    </>
   );
 };
 
