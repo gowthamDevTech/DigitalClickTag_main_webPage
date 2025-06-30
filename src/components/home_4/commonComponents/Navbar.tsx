@@ -76,7 +76,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden shadow px-4 pb-5">
+        <div className="md:hidden shadow px-4 pb-5 bg-[var(--primary1)]">
           <nav className="flex flex-col space-y-3">
             {navLinks.map((link) => (
               <a
