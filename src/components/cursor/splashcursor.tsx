@@ -149,7 +149,7 @@ export default function SplashCursor({
 
       const halfFloatTexType = isWebGL2
         ? (gl as WebGL2RenderingContext).HALF_FLOAT
-        : (halfFloat && (halfFloat as any).HALF_FLOAT_OES) || 0;
+        : (halfFloat && (halfFloat as unknown).HALF_FLOAT_OES) || 0;
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
 
 
