@@ -8,7 +8,7 @@ export default function ClientsSection() {
     <section className="relative">
       <BackgroundImage image={bg.src}/>
       <div className="max-w-6xl mx-auto px-4 text-center py-16">
-        <p className="text-gray-500 uppercase tracking-widest mb-8">Trusted by leading brands</p>
+        <h1 className="text-gray-700 tracking-widest uppercase text-3xl  mb-8">Trusted by leading brands</h1>
         <div className="flex flex-wrap justify-center gap-8">
           {clients.map((client) => (
             <div key={client} className="text-gray-700 text-lg font-semibold opacity-70 hover:opacity-100 transition">

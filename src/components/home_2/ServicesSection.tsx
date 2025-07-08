@@ -1,4 +1,4 @@
-import bg from "@/assets/bg/bg-1.jpg";
+import bg from "@/assets/bg/bg-1.webp";
 import BackgroundImage from "../home_4/commonComponents/background/backgroundImage";
 import BackgroundHover from "../home_4/commonComponents/background/backgroundhover";
 
