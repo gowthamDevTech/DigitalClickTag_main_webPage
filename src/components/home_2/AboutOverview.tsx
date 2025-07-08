@@ -2,11 +2,14 @@
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import BackgroundImage from "../home_4/commonComponents/background/backgroundImage";
 import bg from "../../assets/bg/bg-3.jpg";
+import BackgroundGradient from "@/components/home_4/commonComponents/background/backgroundgradient";
 // src/components/home/AboutOverview.tsx
 export default function AboutOverview() {
   return (
-    <section className="relative]">
-<BackgroundImage image={bg.src}/>
+    <section className="relative ">
+{/* <BackgroundImage image={bg.src}/> */}
+<BackgroundGradient/>
+
       <div className=" max-w-6xl mx-auto py-20 px-4 md:flex items-center gap-10 ">
 
         <div className="md:w-1/2 mb-8 md:mb-0 hidden md:block">

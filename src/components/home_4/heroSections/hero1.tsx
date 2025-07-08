@@ -1,6 +1,6 @@
 import React from 'react';
 import BackgroundImage from '@/components/home_4/commonComponents/background/backgroundImage';
-import bg from '@/assets/bg/bg-16.jpg'
+import bg from '@/assets/bg/team3.webp'
 
 const Hero1 = () => {
   return (
@@ -15,12 +15,12 @@ const Hero1 = () => {
           <rect x="0" y="0" width="100%" height="100%" fill="url(#pattern-zigzag)" />
         </svg>
       </div> */}
-      <div className="relative z-10 max-w-4xl mx-auto text-center py-20  px-4 sm:px-6 lg:px-8 bg-white/5 backdrop-blur-sm text-white">
+      <div className="relative z-10 max-w-4xl mx-auto text-center py-20  px-4 sm:px-6 lg:px-8  text-white">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight">
           Fuel Your Business with Cutting Edge - Digital Marketing Strategies!
         </h1>
         <p className="text-lg sm:text-xl leading-relaxed">
-          Since 2014 we&apos;ve empowered 50+ businesses with creative and impactful digital solutions.
+           we&apos;ve empowered 50+ businesses with creative and impactful digital solutions.
         </p>
       </div>
     </section>

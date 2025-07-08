@@ -12,8 +12,8 @@ const projects = [
 
 export default function PortfolioPreview() {
   return (
-    <section id="portfolio" className=" relative">
-      <BackgroundImage image={bg.src}/>
+    <section id="portfolio" className=" relative bg-[var(--primary)]">
+      {/* <BackgroundImage image={bg.src}/> */}
       <div className="max-w-6xl mx-auto px-4 text-center py-20">
         <h2 className="text-3xl text-white font-bold mb-10">Our Work</h2>
         <div className="grid md:grid-cols-3 gap-6">

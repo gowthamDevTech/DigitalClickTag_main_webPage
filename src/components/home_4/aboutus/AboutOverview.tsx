@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import digitalClickTagLogo from '@/assets/official images/company images/digitalclicktaglogo.png';
 import BackgroundImage from '../commonComponents/background/backgroundImage';
-import bg from '@/assets/bg/bg-1.jpg';
+import bg from '@/assets/bg/bg-1.webp';
 
 
 export default function AboutOverview() {
