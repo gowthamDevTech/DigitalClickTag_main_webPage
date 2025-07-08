@@ -153,13 +153,13 @@ export default function SplashCursor({
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
 
 
-      let formatRGBA: any;
+      let formatRGBA: unknown;
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
 
-      let formatRG: any;
+      let formatRG: unknown;
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
 
-      let formatR: any;
+      let formatR: unknown;
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
 
       if (isWebGL2) {
