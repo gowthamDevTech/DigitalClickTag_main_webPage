@@ -11,7 +11,14 @@ import BlogPreview from "@/components/home/BlogPreview";
 import CTASection from "@/components/home/CTASection";
 import ContactBanner from "@/components/home/ContactBanner";
 
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
+
 export default function Home() {
+  const router = useRouter();
+  useEffect(() => {
+    router.replace("/home");
+  }, [router]);
   return (
     <>
       <Navbar />
