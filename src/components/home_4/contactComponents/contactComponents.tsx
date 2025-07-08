@@ -39,9 +39,9 @@ const ContactSection: React.FC = () => {
               <Mail className="text-indigo-500 flex-shrink-0 mt-1" size={24} />
               <div>
                 <h3 className="font-semibold text-gray-700">Email</h3>
-                <a href="mailto:digitalclicktag@gmail.com" className="text-indigo-600 hover:text-indigo-800 transition-colors duration-200">
+                <p className="text-indigo-600 hover:text-indigo-800 transition-colors duration-200">
                 digitalclicktag@gmail.com
-                </a>
+                </p>
               </div>
             </div>
             {/* <div className="flex items-start space-x-4">

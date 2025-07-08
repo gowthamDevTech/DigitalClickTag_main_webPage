@@ -29,7 +29,7 @@ export default function CTASection() {
         <div className="flex-1 flex justify-center"></div>
         {/* Third Column */}
         <div className="flex-1 flex flex-col items-center ">
-          <p className="mb-6 max-w-sm">Let our team of digital experts help you create a strategy that drives success.</p>
+          <p className="mb-6 text-lg max-w-sm">Let our team of digital experts help you create a strategy that drives success.</p>
           <a href="/home/contact" className="inline-block bg-white text-indigo-700 px-6 py-3 rounded-md font-semibold hover:bg-gray-100">
             Contact Us
           </a>
