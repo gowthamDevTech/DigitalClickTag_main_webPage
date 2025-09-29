@@ -42,7 +42,7 @@ export default function Footer() {
           <h3 className="text-white font-semibold mb-4">Contact</h3>
           <ul className="space-y-2 text-gray-100">
             {[
-              { icon: '✉️', text: 'hello@digitalclicktag.com' },
+              { icon: '✉️', text: 'sparkedgeoptimization@gmail.com' },
               { icon: '📞', text: '+91 98765 43210' },
               { icon: '📍', text: 'Electronic city, Bengaluru' }
             ].map((contact, index) => (
