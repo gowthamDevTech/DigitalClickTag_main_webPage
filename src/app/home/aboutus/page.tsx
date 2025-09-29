@@ -129,7 +129,7 @@ const AboutUsPage = () => {
             </div> */}
             <div className="flex items-center justify-center md:justify-start">
               <span className="mr-3">📧</span>
-              <p>digitalclicktag@gmail.com</p>
+              <p>sparkedgeoptimization@gmail.com</p>
             </div>
             {/* <div className="flex items-center justify-center md:justify-start">
               <span className="mr-3">📞</span>
