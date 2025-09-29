@@ -5,6 +5,7 @@ import GoogleAdsPackages from "@/components/home_4/pricingCards/PricingCard5";
 import Header from "@/components/home_4/home/Header";
 import Hero1 from "@/components/home_4/heroSections/hero1";
 import { CallToAction } from "@/components/home_4/yearly-service-components/yearlyServiceComponents";
+import WebsitePrice2 from "@/components/home_4/pricingCards/PricingCard7";
 
 const WebsiteAndSeoPage = () => {
   return (
@@ -12,12 +13,13 @@ const WebsiteAndSeoPage = () => {
       <Hero1 />
      
       <div className=" px-4  max-w-7xl mx-auto space-y-16">
-        <WebsitePackages />
+        <WebsitePrice2/>
+        {/* <WebsitePackages /> */}
         <SEOPackages />
         <GoogleAdsPackages />
       </div>
-
       <CallToAction />
+
     </div>
   );
 };
