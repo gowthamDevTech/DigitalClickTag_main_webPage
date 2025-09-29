@@ -10,7 +10,7 @@
 }
 
 
-/* Custom selection styles */
+/* Custom selection styless */
 body::selection {
   background-color: #B22222; /* yellow */
   color: #FFC107; /* green */
