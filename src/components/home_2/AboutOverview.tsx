@@ -22,7 +22,7 @@ export default function AboutOverview() {
           {/* <img src="/images/about.jpg" alt="About us" className="rounded-xl w-full" /> */}
         </div>
         <div className="md:w-1/2 text-shadow-white bg-white/10 backdrop-blur-lg rounded-xl p-6 shadow-lg border border-white/20">
-          <h2 className="text-3xl font-bold mb-4">About Digital Click Tag</h2>
+          <h2 className="text-3xl font-bold mb-4">About Spark Edge Optimization</h2>
           <p className=" mb-4">
             We are a team of marketing experts and creatives who work together
             to build your digital success.

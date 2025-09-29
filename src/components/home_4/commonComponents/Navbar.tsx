@@ -43,7 +43,7 @@ export default function Navbar() {
         <Link href="/home">
         <Image
           src={digitalClickTagLogo}
-          alt="Digital Click Tag Logo"
+          alt="Spark Edge Optimization Logo"
           width={isScrolled ? 55 : 75}
           height={isScrolled ? 55 : 75}
           className={`object-cover transition-all duration-300 ${isScrolled ? 'sm:w-[55px] sm:h-[55px]' : 'sm:w-[75px] sm:h-[75px]'}`}

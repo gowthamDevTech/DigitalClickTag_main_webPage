@@ -6,9 +6,9 @@ import SplashCursor from "@/components/cursor/splashcursor";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Digital Click Tag",
+  title: "Spark Edge Optimization",
   description:
-    "Digital Click Tag is an IT services company specializing in digital marketing, web development, and mobile app development to power your business growth.",
+    "Spark Edge Optimization is an IT services company specializing in digital marketing, web development, and mobile app development to power your business growth.",
 };
 
 export default function Layout({

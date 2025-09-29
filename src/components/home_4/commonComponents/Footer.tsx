@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-8 text-sm">
         {/* Logo & Description */}
         <div className="md:col-span-2">
-          <div className="text-2xl font-bold text-white mb-4">DigitalClickTag</div>
+          <div className="text-2xl font-bold text-white mb-4">Spark Edge Optimization</div>
           <p className="text-gray-50">
             A digital agency providing innovative marketing solutions and web design that help businesses grow and succeed online.
           </p>
@@ -56,7 +56,7 @@ export default function Footer() {
       </div>
 
       <div className="mt-8 text-center text-white text-xs">
-        © {new Date().getFullYear()} DigitalClickTag Agency. All rights reserved.
+        © {new Date().getFullYear()} Spark Edge Optimization Agency. All rights reserved.
       </div>
     </footer>
   );
