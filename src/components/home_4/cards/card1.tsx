@@ -1,7 +1,15 @@
+"use client";
+
 import React from 'react';
+import { useRouter } from 'next/navigation';
 import ButtonLinearGradient1 from '@/components/home_4/buttons/button1';
 
 const Card1 = () => {
+  const router = useRouter();
+  
+  const handleButtonClick = () => {
+    router.push('/home/contact');
+  };
   const bonusAddons = [
     "Instagram Growth Audit & Setup",
     "YouTube Channel Audit & Setup",
@@ -28,8 +36,8 @@ const Card1 = () => {
             </div>
           ))}
         </div>
-        <ButtonLinearGradient1 text={'Get a Free Consultation'}/>
-        
+        <ButtonLinearGradient1 text={'Get a Free Consultation'} onClick={handleButtonClick}/>
+
       </div>
     </section>
   );
