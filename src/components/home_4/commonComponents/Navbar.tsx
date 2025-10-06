@@ -51,7 +51,7 @@ export default function Navbar() {
         />
                   </a>
         {/* <div className="text-2xl font-bold text-indigo-600">DigitalClickTag</div> */}
-        {/* Desktop Nav */}
+        {/* Desktop Nav nav */}
         <nav className="hidden md:flex space-x-6 ">
           {navLinks.map((link) => (
             <a
