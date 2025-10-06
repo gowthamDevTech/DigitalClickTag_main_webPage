@@ -88,7 +88,7 @@ const ContactSection: React.FC = () => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          to_email: 'gowthamraajmg@gmail.com', // Replace with your email
+          to_emails: ['gowthamraajmg@gmail.com', 'digitalclicktag@gmail.com'],
           subject: `New Contact from ${formData.name}`,
           html: emailContent,
         }),
