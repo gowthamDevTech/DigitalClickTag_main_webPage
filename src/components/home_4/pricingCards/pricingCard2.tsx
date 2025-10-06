@@ -1,6 +1,15 @@
 // components/PricingCard.tsx
 import React from 'react';
-import { MonthlyPricingPlan } from '@/types/pricingCardTypes'; // Import the interface
+
+interface MonthlyPricingPlan {
+  name: string;
+  tagline: string;
+  features: string[];
+  videoEditingDetails?: string;
+  campaignDetails?: string;
+  campaignMetaAdsPayment?: string;
+  isHighlighted?: boolean;
+}
 
 interface PricingCardProps {
   plan: MonthlyPricingPlan;
@@ -10,7 +19,6 @@ const PricingCard2: React.FC<PricingCardProps> = ({ plan }) => {
   const {
     name,
     tagline,
-    price,
     features,
     videoEditingDetails,
     campaignDetails,

@@ -9,7 +9,7 @@ interface PricingCard6Props {
   highlightColor: string;
 }
 
-const PricingCard6: React.FC<PricingCard6Props> = ({ title, price, features, notes, highlightColor }) => {
+const PricingCard6: React.FC<PricingCard6Props> = ({ title, features, notes, highlightColor }) => {
   return (
     <div className="bg-white rounded-xl shadow-lg p-6 transform transition duration-300 hover:scale-105 hover:shadow-2xl py-10">
       <h3 className={`text-2xl font-semibold mb-2 ${highlightColor}`}>{title}</h3>
