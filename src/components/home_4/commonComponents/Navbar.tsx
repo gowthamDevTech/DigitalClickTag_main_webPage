@@ -40,16 +40,16 @@ export default function Navbar() {
       >
         {/* <BackgroundImage image="/images/poster1.jpg" /> */}
         {/* Logo image */}
-        <Link href="/home">
+        <a href="/home">
         <Image
           src={digitalClickTagLogo}
-          alt="Spark Edge Optimization Logo"
+          alt="Digital Click Tag Logo"
           width={isScrolled ? 55 : 75}
           height={isScrolled ? 55 : 75}
           className={`object-cover transition-all duration-300 ${isScrolled ? 'sm:w-[55px] sm:h-[55px]' : 'sm:w-[75px] sm:h-[75px]'}`}
           priority
         />
-                  </Link>
+                  </a>
         {/* <div className="text-2xl font-bold text-indigo-600">DigitalClickTag</div> */}
         {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-6 ">

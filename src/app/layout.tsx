@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Spark Edge Optimization",
-  description: "Spark Edge Optimization is an IT services company specializing in digital marketing, web development, and mobile app development to power your business growth.",
+  title: "Digital Click Tag",
+  description: "Digital Click Tag is an IT services company specializing in digital marketing, web development, and mobile app development to power your business growth.",
 };
 
 export default function RootLayout({
