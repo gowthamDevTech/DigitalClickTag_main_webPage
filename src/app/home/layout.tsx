@@ -22,7 +22,7 @@ export default function Layout({
 
         {/* <Header /> */}
       <Navbar />
-{/* <SplashCursor/> */}
+<SplashCursor/>
         {children}
       <Footer />
       <ContactButtons />
