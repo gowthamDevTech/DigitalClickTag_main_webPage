@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-8 text-sm">
         {/* Logo & Description */}
         <div className="md:col-span-2">
-          <div className="text-2xl font-bold text-white mb-4">Spark Edge Optimization</div>
+          <div className="text-2xl font-bold text-white mb-4">Digital Click Tag</div>
           <p className="text-gray-50">
             A digital agency providing innovative marketing solutions and web design that help businesses grow and succeed online.
           </p>
@@ -42,7 +42,7 @@ export default function Footer() {
           <h3 className="text-white font-semibold mb-4">Contact</h3>
           <ul className="space-y-2 text-gray-100">
             {[
-              { icon: '✉️', text: 'sparkedgeoptimization@gmail.com' },
+              { icon: '✉️', text: 'Digitalclicktag@gmail.com' },
               { icon: '📞', text: '+91 98765 43210' },
               { icon: '📍', text: 'Electronic city, Bengaluru' }
             ].map((contact, index) => (
@@ -56,7 +56,7 @@ export default function Footer() {
       </div>
 
       <div className="mt-8 text-center text-white text-xs">
-        © {new Date().getFullYear()} Spark Edge Optimization Agency. All rights reserved.
+        © {new Date().getFullYear()} Digital Click Tag Agency. All rights reserved.
       </div>
     </footer>
   );

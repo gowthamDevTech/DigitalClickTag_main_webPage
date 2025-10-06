@@ -11,7 +11,7 @@ export default function  Header  ()  {
       </div>
       <div className="flex items-center space-x-4">
         
-        <span className="text-sm">Spark Edge Optimization</span>
+        <span className="text-sm">Digital Click Tag</span>
       </div>
     </header>
   ); 

@@ -116,9 +116,9 @@ const WebsitePrice2 = () => {
               className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition"
             >
               <h4 className="text-xl font-semibold mb-2">{item.title}</h4>
-              <p className="text-lg font-bold text-indigo-600 mb-4">
+              {/* <p className="text-lg font-bold text-indigo-600 mb-4">
                 {item.price}
-              </p>
+              </p> */}
               <ul className="text-gray-600 text-sm mb-4 space-y-1">
                 {item.features.map((f, i) => (
                   <li key={i}>✅ {f}</li>
@@ -141,9 +141,9 @@ const WebsitePrice2 = () => {
               className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition"
             >
               <h4 className="text-xl font-semibold mb-2">{item.title}</h4>
-              <p className="text-lg font-bold text-indigo-600 mb-4">
+              {/* <p className="text-lg font-bold text-indigo-600 mb-4">
                 {item.price}
-              </p>
+              </p> */}
               <ul className="text-gray-600 text-sm mb-4 space-y-1">
                 {item.features.map((f, i) => (
                   <li key={i}>✅ {f}</li>

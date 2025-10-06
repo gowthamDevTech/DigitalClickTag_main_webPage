@@ -110,7 +110,7 @@ export default function AboutOverview() {
                 <div className="relative z-10 hidden md:block">
                   <Image
                     src={digitalClickTagLogo}
-                    alt="Spark Edge Optimization Logo"
+                    alt="Digital Click Tag Logo"
                     width={300}
                     height={300}
                     className="object-cover"
