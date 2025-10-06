@@ -40,22 +40,23 @@ const ContactButtons = () => {
       {/* Contact Form Dialog */}
       {isDialogOpen && (
         <div 
-          className="fixed inset-0 bg-transparent bg-blur-sm bg-opacity-50 flex items-center justify-center z-[2000]" 
+          className="fixed top-0 left-0 right-0 bottom-0 bg-transparent bg-blur-sm bg-opacity-50 flex items-center justify-center z-[2000]" 
           onClick={closeDialog}
         >
           <div 
-            className="bg-white p-4 rounded-lg max-w-[95%] max-h-[95%] overflow-auto relative w-full"
+            className="bg-white px-4 pb-8  pt-10 rounded-lg max-w-[95%] max-h-[95%] overflow-auto relative w-full"
             onClick={e => e.stopPropagation()}
           >
             <button 
               onClick={closeDialog}
-              className="absolute top-2 right-2 bg-none border-none text-2xl cursor-pointer text-gray-500 hover:text-gray-700"
+              className="absolute top-0 right-2 bg-none border-none text-4xl cursor-pointer text-gray-500 hover:text-gray-700"
               aria-label="Close dialog"
             >
               &times;
             </button>
              
               <ContactSection/>
+         
 
 
           
