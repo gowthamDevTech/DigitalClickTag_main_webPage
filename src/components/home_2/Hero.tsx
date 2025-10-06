@@ -39,7 +39,7 @@ export default function Hero() {
               Get tailored strategies that drive traffic, boost sales, and elevate your brand.
             </p>
             <a
-              href="/contact"
+              href="/home/contact"
               className="inline-block bg-white text-indigo-700 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition"
             >
               Get Started

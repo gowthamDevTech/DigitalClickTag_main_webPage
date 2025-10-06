@@ -17,7 +17,7 @@ export default function Hero() {
         </p>
         <div className="mt-10 flex space-x-4">
           <Link
-            href="/contact"
+            href="/home/contact"
             className="inline-block bg-blue-600 py-3 px-8 rounded-md font-medium hover:bg-blue-700"
           >
             Get Started
