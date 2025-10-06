@@ -44,7 +44,7 @@ const ContactButtons = () => {
           onClick={closeDialog}
         >
           <div 
-            className="bg-white p-8 rounded-lg max-w-[70%] max-h-[100%] overflow-auto relative w-full"
+            className="bg-white p-4 rounded-lg max-w-[95%] max-h-[95%] overflow-auto relative w-full"
             onClick={e => e.stopPropagation()}
           >
             <button 
