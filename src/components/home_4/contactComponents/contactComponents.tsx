@@ -275,7 +275,7 @@ const ContactSection: React.FC = () => {
             <button
               type="submit"
               disabled={isSubmitting}
-              className={`w-full px-8 py-4 bg-indigo-600 text-white font-bold rounded-full shadow-lg focus:outline-none focus:ring-4 focus:ring-indigo-300 transition-all duration-300 ease-in-out text-lg ${
+              className={`w-full px-8 py-4 bg-indigo-600 text-white font-bold rounded-full shadow-lg focus:outline-none focus:ring-4 focus:ring-indigo-300 transition-all duration-300 ease-in-out text-lg md:text-xl ${
                 isSubmitting 
                   ? 'opacity-70 cursor-not-allowed' 
                   : 'hover:bg-indigo-700 hover:scale-105 transform'
