@@ -1,6 +1,8 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
+import { MessageCircle } from "lucide-react";
 
 const pricingData = {
   websites: [
@@ -100,6 +102,23 @@ const pricingData = {
 };
 
 const WebsitePrice2 = () => {
+  // Add keyframe animation for the gradient
+  React.useEffect(() => {
+    const style = document.createElement('style');
+    style.innerHTML = `
+      @keyframes gradient {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+    `;
+    document.head.appendChild(style);
+    return () => {
+      document.head.removeChild(style);
+      return undefined;
+    };
+  }, []);
+
   return (
     <section className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
@@ -124,10 +143,21 @@ const WebsitePrice2 = () => {
                   <li key={i}>✅ {f}</li>
                 ))}
               </ul>
-              <p className="text-sm text-gray-500">
+              <p className="text-sm text-gray-500 mb-6">
                 <span className="font-medium text-gray-700">Ideal For:</span>{" "}
                 {item.ideal.join(", ")}
               </p>
+              <Link 
+                href="/home/contact"
+                className="relative inline-flex items-center justify-center w-full py-3 px-4 rounded-md text-sm font-medium text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-size-200 bg-pos-0 hover:bg-pos-100 transition-all duration-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                style={{
+                  backgroundSize: '200% auto',
+                  animation: 'gradient 3s ease infinite',
+                }}
+              >
+                <MessageCircle className="w-4 h-4 mr-2" />
+                Get Quote
+              </Link>
             </div>
           ))}
         </div>
@@ -149,10 +179,21 @@ const WebsitePrice2 = () => {
                   <li key={i}>✅ {f}</li>
                 ))}
               </ul>
-              <p className="text-sm text-gray-500">
+              <p className="text-sm text-gray-500 mb-6">
                 <span className="font-medium text-gray-700">Ideal For:</span>{" "}
                 {item.ideal.join(", ")}
               </p>
+              <Link 
+                href="/home/contact"
+                className="relative inline-flex items-center justify-center w-full py-3 px-4 rounded-md text-sm font-medium text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-size-200 bg-pos-0 hover:bg-pos-100 transition-all duration-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                style={{
+                  backgroundSize: '200% auto',
+                  animation: 'gradient 3s ease infinite',
+                }}
+              >
+                <MessageCircle className="w-4 h-4 mr-2" />
+                Get Quote
+              </Link>
             </div>
           ))}
         </div>

@@ -1,5 +1,7 @@
 'use client';
 import React from 'react';
+import Link from 'next/link';
+import { MessageCircle } from 'lucide-react';
 
 interface Package {
   title: string;
@@ -53,6 +55,23 @@ const adsPackages: Package[] = [
 ];
 
 const GoogleAdsPackages: React.FC = () => {
+  // Add keyframe animation for the gradient
+  React.useEffect(() => {
+    const style = document.createElement('style');
+    style.innerHTML = `
+      @keyframes gradient {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+    `;
+    document.head.appendChild(style);
+    return () => {
+      document.head.removeChild(style);
+      return undefined;
+    };
+  }, []);
+
   return (
     <section className="my-16">
         <h2 className="text-4xl font-extrabold text-center mb-10 bg-gradient-to-r from-yellow-500 to-orange-500 text-transparent bg-clip-text">
@@ -72,11 +91,22 @@ const GoogleAdsPackages: React.FC = () => {
 </h3>
 
               {/* <p className="text-pink-600 text-lg font-bold mb-4">{pkg.price}</p> */}
-              <ul className="list-disc ml-5 space-y-1 text-sm text-gray-700">
+              <ul className="list-disc ml-5 space-y-1 text-sm text-gray-700 mb-6">
                 {pkg.features.map((feature, i) => (
                   <li key={i}>{feature}</li>
                 ))}
               </ul>
+              <Link 
+                href="/home/contact"
+                className="relative inline-flex items-center justify-center w-full py-3 px-4 rounded-md text-sm font-medium text-white bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 bg-size-200 bg-pos-0 hover:bg-pos-100 transition-all duration-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                style={{
+                  backgroundSize: '200% auto',
+                  animation: 'gradient 3s ease infinite',
+                }}
+              >
+                <MessageCircle className="w-4 h-4 mr-2" />
+                Get Quote
+              </Link>
             </div>
           </div>
         ))}

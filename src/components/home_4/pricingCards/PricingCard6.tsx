@@ -1,5 +1,7 @@
 // components/PackageCard.tsx
 import React from 'react';
+import Link from 'next/link';
+import { MessageCircle } from 'lucide-react';
 
 interface PricingCard6Props {
   title: string;
@@ -26,6 +28,14 @@ const PricingCard6: React.FC<PricingCard6Props> = ({ title, features, notes, hig
           ))}
         </div>
       )}
+      <div className="mt-6">
+        <Link 
+          href="/home/contact"
+          className="w-full inline-flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors duration-200"
+        >
+          <MessageCircle className="w-4 h-4 mr-2" /> Get Quote
+        </Link>
+      </div>
     </div>
   );
 };
